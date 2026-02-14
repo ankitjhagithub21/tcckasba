@@ -105,17 +105,18 @@ export function Navbar() {
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: "auto" }}
-            exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-dark/98 backdrop-blur-xl border-t border-white/10"
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 0.3, ease: "easeInOut" }}
+            className="md:hidden bg-dark/95 backdrop-blur-xl border-t border-white/10"
           >
             <div className="px-4 py-6 space-y-2">
               {navLinks.map((link, i) => (
                 <motion.a
                   key={link.name}
                   href={link.href}
-                  initial={{ x: -50, opacity: 0 }}
+                  initial={{ x: -20, opacity: 0 }}
                   animate={{ x: 0, opacity: 1 }}
                   transition={{ delay: 0.05 * i }}
                   onClick={() => setIsOpen(false)}
@@ -124,18 +125,7 @@ export function Navbar() {
                   {link.name}
                 </motion.a>
               ))}
-              <motion.a
-                href="https://www.facebook.com/tcckasba"
-                target="_blank"
-                rel="noopener noreferrer"
-                initial={{ x: -50, opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                transition={{ delay: 0.4 }}
-                className="block text-center mt-4 px-5 py-3 bg-gradient-to-r from-accent to-accent-light text-dark font-semibold rounded-full"
-              >
-                <Facebook size={16} className="inline mr-2" />
-                Follow Us on Facebook
-              </motion.a>
+              
             </div>
           </motion.div>
         )}

@@ -5,52 +5,7 @@ import { Facebook, MapPin, Calendar, ChevronDown } from 'lucide-react';
 export function Hero() {
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center hero-gradient overflow-hidden">
-      {/* Animated Background Elements */}
-      <div className="absolute inset-0 overflow-hidden">
-        {/* Cricket stumps pattern */}
-        {[...Array(20)].map((_, i) => (
-          <motion.div
-            key={i}
-            className="absolute w-1 bg-accent/5 rounded-full"
-            style={{
-              height: `${Math.random() * 200 + 50}px`,
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-            }}
-            animate={{
-              opacity: [0.1, 0.3, 0.1],
-              scaleY: [1, 1.2, 1],
-            }}
-            transition={{
-              duration: Math.random() * 4 + 3,
-              repeat: Infinity,
-              ease: 'easeInOut',
-            }}
-          />
-        ))}
-
-        {/* Large Cricket Ball */}
-        <motion.div
-          className="absolute -right-20 -top-20 w-96 h-96 rounded-full opacity-10"
-          style={{
-            background: 'radial-gradient(circle, #d4a843 0%, transparent 70%)',
-          }}
-          animate={{ rotate: 360 }}
-          transition={{ duration: 60, repeat: Infinity, ease: 'linear' }}
-        />
-
-        {/* Decorative circles */}
-        <motion.div
-          className="absolute bottom-20 -left-40 w-80 h-80 rounded-full border border-accent/10"
-          animate={{ rotate: -360 }}
-          transition={{ duration: 40, repeat: Infinity, ease: 'linear' }}
-        />
-        <motion.div
-          className="absolute top-1/3 right-1/4 w-4 h-4 rounded-full bg-accent/30"
-          animate={{ y: [-10, 10, -10], opacity: [0.3, 0.7, 0.3] }}
-          transition={{ duration: 4, repeat: Infinity }}
-        />
-      </div>
+     
 
       {/* Main Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-32">
