@@ -156,31 +156,7 @@ export function Hero() {
           </motion.a>
         </motion.div>
 
-        {/* Stats Bar */}
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 1.5 }}
-          className="mt-20 grid grid-cols-2 sm:grid-cols-4 gap-6 max-w-3xl mx-auto"
-        >
-          {[
-            { number: '28+', label: 'Years of Legacy' },
-            { number: '500+', label: 'Matches Played' },
-            { number: '2', label: 'Iconic Teams' },
-            { number: '1000+', label: 'Fans & Supporters' },
-          ].map((stat, i) => (
-            <motion.div
-              key={stat.label}
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 1.7 + i * 0.1 }}
-              className="glass-card rounded-2xl p-4 text-center"
-            >
-              <div className="text-2xl sm:text-3xl font-black gradient-text">{stat.number}</div>
-              <div className="text-white/50 text-xs sm:text-sm mt-1">{stat.label}</div>
-            </motion.div>
-          ))}
-        </motion.div>
+        
       </div>
 
       {/* Scroll Indicator */}

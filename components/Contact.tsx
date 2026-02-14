@@ -33,9 +33,9 @@ export function Contact() {
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <div className=" rounded-3xl bg-white flex flex-col text-gray-800 p-8 sm:p-10 shadow-xl shadow-black/5 border border-gray-100 flex flex-col">
+            <div className=" rounded-3xl  flex flex-col border-white/20 p-8 sm:p-10 shadow-xl shadow-black/5 border border-gray-100 flex flex-col lg:h-full">
               <div className="flex  items-center gap-3 mb-6">
-                <div className="w-12 h-12 rounded-xl bg-gray-200 flex items-center justify-center">
+                <div className="w-12 h-12 rounded-xl border border-white/20 flex items-center justify-center">
                   <MapPin  size={22} />
                 </div>
                 <div>
