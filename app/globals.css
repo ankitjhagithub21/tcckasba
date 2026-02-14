@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+html{
+  scroll-behavior: smooth;
+}
 .hindi-text {
   font-family: 'Noto Sans Devanagari', sans-serif;
 }

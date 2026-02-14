@@ -28,7 +28,7 @@ export function Teams() {
             Team A <span className="text-accent">vs</span> Team B
           </h2>
           <div className="mt-4 w-24 h-1 bg-gradient-to-r from-accent to-accent-light mx-auto rounded-full" />
-          <p className="mt-6 text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+          <p className="mt-6 text-lg  max-w-2xl mx-auto leading-relaxed">
             The ultimate cricket showdown – Experience meets Energy. Seniors vs Juniors. 
             A rivalry that has defined 28 years of TCC Cup history.
           </p>
@@ -44,7 +44,7 @@ export function Teams() {
             whileHover={{ scale: 1.02 }}
             className="relative"
           >
-            <div className="bg-gradient-to-br from-primary to-primary-light rounded-3xl p-8 sm:p-10 text-center relative overflow-hidden">
+            <div className="bg-gradient-to-br app from-primary to-primary-light rounded-3xl p-8 sm:p-10 text-center relative overflow-hidden">
               {/* Pattern overlay */}
               <div className="absolute inset-0 opacity-10">
                 {[...Array(6)].map((_, i) => (
