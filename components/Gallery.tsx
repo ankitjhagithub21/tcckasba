@@ -40,23 +40,28 @@ const galleryItems = [
     span: '',
     height: 'h-72',
   },
+  
   {
-    title: 'The Seniors',
-    description: 'The village comes alive – united through the love of cricket and tradition.',
+    title: 'Team Spirit',
+    description: 'The bond of friendship and sportsmanship on the cricket field.',
     image: '/gallery/c6.jpg',
-    span: 'lg:col-span-2',
+    span: '',
     height: 'h-72',
   },
   {
     title: 'The Juniors',
-    description: 'The village comes alive – united through the love of cricket and tradition.',
-    image: '/gallery/c8.jpg',
+    description: 'Young talents bringing energy and enthusiasm to the field.',
+    image: '/gallery/c7.jpg',
     span: '',
     height: 'h-72',
   },
-
-  
-  
+  {
+    title: 'Village Celebration',
+    description: 'The entire community coming together to celebrate cricket and culture.',
+    image: '/gallery/c8.jpg',
+    span: 'lg:col-span-2',
+    height: 'h-72',
+  },
 ];
 
 export function Gallery() {
