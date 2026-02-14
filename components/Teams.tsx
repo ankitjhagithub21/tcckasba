@@ -102,7 +102,7 @@ export function Teams() {
             initial={{ opacity: 0, scale: 0 }}
             animate={isInView ? { opacity: 1, scale: 1 } : {}}
             transition={{ duration: 0.6, delay: 0.5, type: 'spring' }}
-            className="flex justify-center items-center"
+            className="flex justify-center items-center md:mt-0 mt-5"
           >
             <div className="relative">
               <motion.div
