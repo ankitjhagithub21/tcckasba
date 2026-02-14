@@ -44,7 +44,7 @@ export function Teams() {
             whileHover={{ scale: 1.02 }}
             className="relative"
           >
-            <div className="bg-gradient-to-br app from-primary to-primary-light rounded-3xl p-8 sm:p-10 text-center relative overflow-hidden">
+            <div className="bg-gradient-to-br from-emerald-600 to-teal-600 rounded-3xl p-8 sm:p-10 text-center relative overflow-hidden">
               {/* Pattern overlay */}
               <div className="absolute inset-0 opacity-10">
                 {[...Array(6)].map((_, i) => (
@@ -182,31 +182,7 @@ export function Teams() {
           </motion.div>
         </div>
 
-        {/* Match Info */}
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.8, delay: 0.8 }}
-          className="mt-16 bg-white rounded-3xl p-8 sm:p-10 shadow-xl shadow-black/5 border border-gray-100"
-        >
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
-            <div>
-              <div className="text-4xl mb-2">🏏</div>
-              <h4 className="font-bold text-dark text-lg">Annual Match</h4>
-              <p className="text-gray-500 text-sm mt-1">Played every year during Holi festival</p>
-            </div>
-            <div>
-              <div className="text-4xl mb-2">🎨</div>
-              <h4 className="font-bold text-dark text-lg">Holi Special</h4>
-              <p className="text-gray-500 text-sm mt-1">Where colors meet cricket</p>
-            </div>
-            <div>
-              <div className="text-4xl mb-2">🏆</div>
-              <h4 className="font-bold text-dark text-lg">Village Pride</h4>
-              <p className="text-gray-500 text-sm mt-1">The entire village comes together</p>
-            </div>
-          </div>
-        </motion.div>
+       
       </div>
     </section>
   );
